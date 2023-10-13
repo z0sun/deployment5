@@ -30,7 +30,6 @@ steps {
 sh '''#!/bin/bash
 scp /var/lib/jenkins/workspace/BankingAPP_main/setup.sh ubuntu@3.81.80.249:/home/ubuntu
 ssh -i /path/to/private/key ubuntu@3.81.80.249 "chmod +x /home/ubuntu/setup.sh && /home/ubuntu/setup.sh"
-echo "command to run the setup.sh"
 '''
 }
 }
