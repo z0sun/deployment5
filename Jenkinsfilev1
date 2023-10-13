@@ -28,7 +28,7 @@ junit 'test-reports/results.xml'
 stage ('Deploy') {
 steps {
 sh '''#!/bin/bash
-chmod +x scp /var/lib/jenkins/workspace/BankingAPP_main/setup.sh ubuntu@3.81.80.249:/home/ubuntu
+sudo chmod +x scp /var/lib/jenkins/workspace/BankingAPP_main/setup.sh ubuntu@3.81.80.249:/home/ubuntu
 ssh -i ubuntu@3.81.80.249 'bash -s < /home/ubuntu/setup.sh'
 echo "command to run the setup.sh"
 '''
