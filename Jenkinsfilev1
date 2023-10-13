@@ -28,10 +28,7 @@ junit 'test-reports/results.xml'
 stage ('Deploy') {
 steps {
 sh '''#!/bin/bash
-ip_file=/var/lib/jenkins/ip_address.txt
-ip_address=$(cat "$ip_file")
-scp setup.sh ubuntu@"$ip_address":/home/ubuntu/
-ssh ubuntu@"$ip_address" 'bash -s < /home/ubuntu/setup.sh'
+scp -i /home/ubuntu/.ssh/authorized_keys /home/ubuntu/setup.sh ubuntu@3.81.80.249:/tmp/setup.sh && ssh -i /home/ubuntu/.ssh/authorized_keys ubuntu@3.81.80.249 "bash -s" < /tmp/setup.sh
 echo "command to run the setup.sh"
 '''
 }
