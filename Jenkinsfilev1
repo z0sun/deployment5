@@ -29,8 +29,8 @@ stage ('Deploy') {
 steps {
 sh '''#!/bin/bash
 scp /var/lib/jenkins/workspace/BankingAPP_main/setup.sh ubuntu@3.81.80.249:/home/ubuntu
-ssh -i ubuntu@3.81.80.249
-sudo chmod 'bash -s < /home/ubuntu/setup.sh'
+sudo ssh -i ubuntu@3.81.80.249
+sudo chmod 'bash -S < /home/ubuntu/setup.sh'
 echo "command to run the setup.sh"
 '''
 }
