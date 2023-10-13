@@ -25,17 +25,13 @@ junit 'test-reports/results.xml'
 }
 }
 }
-
 stage ('Deploy') {
-    steps {
-        sh '''#!/bin/bash
-        scp /var/lib/jenkins/workspace/BankingAPP_main/setup.sh ubuntu@3.81.80.249:/home/ubuntu
-        ssh -i /path/to/private/key ubuntu@3.81.80.249 "chmod +x /home/ubuntu/setup.sh && /home/ubuntu/setup.sh"
-        echo "command to run the setup.sh"
-        '''
-    }
-}
-
+steps {
+sh '''#!/bin/bash
+scp /var/lib/jenkins/workspace/BankingAPP_main/setup.sh ubuntu@3.81.80.249:/home/ubuntu
+ssh -i /path/to/private/key ubuntu@3.81.80.249 "chmod +x /home/ubuntu/setup.sh && /home/ubuntu/setup.sh"
+echo "command to run the setup.sh"
+'''
 }
 }
 stage ('Reminder') {
@@ -43,7 +39,6 @@ steps {
 sh '''#!/bin/bash
 echo -e "##############################################################\n # The Application should be running on your other instance!! #\n ##############################################################"
 '''
-}
 }
 }
 }
