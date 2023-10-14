@@ -7,7 +7,7 @@ pipeline {
                 sh '''#!/bin/bash
                 scp var/lib/jenkins/workspace/pkill.sh ubuntu@34.207.172.136:/home/ubuntu
                 ssh ubuntu@34.207.172.136 'bash -s' < /home/ubuntu/pkill.sh
-                echo "command to run the pkill.sh"
+                
                 '''
             }
         }
