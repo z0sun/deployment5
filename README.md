@@ -53,9 +53,9 @@ data "template_file" "python_install" {
 
 > Launch Jenkins: Open up Jenkins on your web browser - you'll typically find it at your-Jenkins-ip:8080.
 
-Start a New Pipeline: Navigate to "New Item", create a 'Pipeline', and give it a name, perhaps something like "AppUpdatePipeline".
+> Start a New Pipeline: Navigate to "New Item", create a 'Pipeline', and give it a name, perhaps something like "AppUpdatePipeline".
 
-Link to GitHub: Under the Pipeline configuration, link Jenkins to the GitHub repository where Jenkinsfilev1 is stored. This is like telling Jenkins where your recipe is located.
+> Link to GitHub: Under the Pipeline configuration, link Jenkins to the GitHub repository where Jenkinsfilev1 is stored. This is like telling Jenkins where your recipe is located.
 
 > Run the Pipeline: Once configured, you simply 'Build' the pipeline and Jenkins will follow the steps in Jenkinsfilev1, ensuring your application is updated automatically and exactly as specified in the file.
 
