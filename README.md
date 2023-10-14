@@ -61,6 +61,8 @@ data "template_file" "python_install" {
 
 [Website][https://github.com/z0sun/deployment5/blob/main/Before%20jenkinsfile2.png]
 
+*******
+
 #### Jenkinsfilev2
 [Build2][https://github.com/z0sun/deployment5/blob/main/Screen%20Shot%202023-10-14%20at%204.15.04%20AM.png]
 
@@ -68,7 +70,11 @@ data "template_file" "python_install" {
 
 [Website2][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev2.png]
 
+*******
 
+# Conclusion
+
+In this build, two public subnets are utilized. To add more security the instance used primarily for Jenkins (build, test, and deploy) could be placed into a private subnet which is used by way of SSH to interact with the instance in the public subnet. 
 
 
 
