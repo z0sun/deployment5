@@ -42,9 +42,29 @@ data "template_file" "python_install" {
 [Jenkinsfilev1][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev1]
 [Jenkinsfilev2][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev2]
 
-> Utilizing commands in Jenkinsfilev1 and Jenkinsfilev2 to SSH into a secondary instance and execute specific scripts underscores a strategic approach to manage and deploy applications in a distributed environment. This methodology enhances the CI/CD pipeline by enabling the Jenkins automation server to interact seamlessly with different instances, thereby optimizing resource utilization and enforcing a structured deployment workflow. By SSHing into the second instance, we ensure that workloads can be distributed and executed in a segregated manner, which not only isolates potential issues to a specific instance but also facilitates parallel operations, thereby speeding up the build and deployment process. Furthermore, by dynamically downloading and executing scripts per step in the Jenkinsfile, we introduce an element of flexibility and reusability to our pipeline, allowing for dynamic adjustments and instantiating configurations or applications tailored to the specifics of a given stage or environment, all while maintaining a clean and organized codebase in our version control.
+> Utilizing commands in Jenkinsfilev1 and Jenkinsfilev2 to SSH into a secondary instance and execute specific scripts makes a strategic approach to managing and deploying applications. This enhances the CI/CD pipeline by enabling the Jenkins automation server to interact seamlessly with different instances, optimizing resource utilization, and enforcing a structured deployment workflow. By SSHing into the second instance, we ensure that workloads can be distributed and executed in a segregated manner, which not only isolates potential issues to a specific instance but also facilitates parallel operations, thereby speeding up the build and deployment process. By dynamically downloading and executing scripts per step in the Jenkinsfile, we introduce an element of flexibility and reusability to our pipeline, allowing for dynamic adjustments and automating configurations or applications tailored to the specifics of a given stage or environment, all while maintaining a clean and organized codebase in our version control.
 
 ****
+
+### Multibranch Pipeline Jenkinsfilev1
+[image][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev1.png]
+
+> Once you've set up your environment, deploying your application using Jenkins is a breeze with our predefined pipeline in Jenkinsfilev1. In a nutshell, Jenkinsfilev1 is like a recipe that tells Jenkins exactly how to deploy our application step-by-step. Jenkins will look at Jenkinsfilev1 and follow the steps outlined in it, which include logging into our second virtual computer instance, grabbing the necessary update script, and running it. This way, even complex updates to our application become as easy as pushing a button. Here’s a simplified walkthrough:
+
+Launch Jenkins: Open up Jenkins on your web browser - you'll typically find it at your-Jenkins-ip:8080.
+
+Start a New Pipeline: Navigate to "New Item", create a 'Pipeline', and give it a name, perhaps something like "AppUpdatePipeline".
+
+Link to GitHub: Under the Pipeline configuration, link Jenkins to the GitHub repository where Jenkinsfilev1 is stored. This is like telling Jenkins where your recipe is located.
+
+Run the Pipeline: Once configured, you simply 'Build' the pipeline and Jenkins will follow the steps in Jenkinsfilev1, ensuring your application is updated automatically and exactly as specified in the file.
+
+#### Jenkinsfilev2
+[image][https://github.com/z0sun/deployment5/blob/main/Screen%20Shot%202023-10-14%20at%204.15.04%20AM.png]
+
+> Jenkinsfilev2 is our simplified guide for updating our app using Jenkins. It has two main steps: Clean and Deploy. First, the Clean step makes sure our workspace is neat, with no leftover data from earlier updates. Then, the Deploy step helps us easily and accurately update our app by following the set instructions. Think of Jenkinsfilev2 as a straightforward two-step checklist that Jenkins follows to help us keep our app updated without any mess or complications.
+
+
 
 
 
