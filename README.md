@@ -24,6 +24,14 @@ This deployment aims to build an infrastructure using IoC and deploy an applicat
 
 > We also gave Terraform instructions, using blocks of code known as data resource blocks, to automatically install Python and Jenkins. This way, once the instances are set up, Python and Jenkins are ready to be used without us doing additional installations.
 
+> `data "template_file" "jenkins_file" {
+  template = file("${path.module}/jenkins.sh")
+}
+
+data "template_file" "python_install" {
+  template = file("${path.module}/pythoninstall.sh")
+}`
+
 > [Jenkins Install][https://github.com/z0sun/deployment5/blob/main/scripts/jenkinsinstall]
 > [Python Install][https://github.com/z0sun/deployment5/blob/main/scripts/pythoninstall.sh]
 
