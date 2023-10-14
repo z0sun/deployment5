@@ -18,6 +18,14 @@ This deployment aims to build an infrastructure using IoC and deploy an applicat
 
 > So, to sum it up: Our main.tf file gives Terraform a blueprint of our desired online space, and once Terraform reads this blueprint, it goes ahead and builds everything for us, including installing the necessary software on our virtual computers.
 
-____
+**** 
+
+### Jenkins/Python Install 
+
+> We also gave Terraform instructions, using blocks of code known as data resource blocks, to automatically install Python and Jenkins. This way, once the instances are set up, Python and Jenkins are ready to be used without us doing additional installations.
+
+> 
+
+
 
 
