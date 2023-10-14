@@ -47,7 +47,7 @@ data "template_file" "python_install" {
 ****
 
 ### Multibranch Pipeline Jenkinsfilev1
-[image][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev1.png]
+[Build][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev1.png]
 
 > Once you've set up your environment, deploying your application using Jenkins is a breeze with our predefined pipeline in Jenkinsfilev1. In a nutshell, Jenkinsfilev1 is like a recipe that tells Jenkins exactly how to deploy our application step-by-step. Jenkins will look at Jenkinsfilev1 and follow the steps outlined in it, which include logging into our second virtual computer instance, grabbing the necessary update script, and running it. This way, even complex updates to our application become as easy as pushing a button. Here’s a simplified walkthrough:
 
@@ -59,13 +59,13 @@ data "template_file" "python_install" {
 
 > Run the Pipeline: Once configured, you simply 'Build' the pipeline and Jenkins will follow the steps in Jenkinsfilev1, ensuring your application is updated automatically and exactly as specified in the file.
 
-[Success][https://github.com/z0sun/deployment5/blob/main/Before%20jenkinsfile2.png]
+[Website][https://github.com/z0sun/deployment5/blob/main/Before%20jenkinsfile2.png]
 
 #### Jenkinsfilev2
-[image][https://github.com/z0sun/deployment5/blob/main/Screen%20Shot%202023-10-14%20at%204.15.04%20AM.png]
+[Build2][https://github.com/z0sun/deployment5/blob/main/Screen%20Shot%202023-10-14%20at%204.15.04%20AM.png]
 
 > Jenkinsfilev2 is our simplified guide for updating our app using Jenkins. It has two main steps: Clean and Deploy. First, the Clean step makes sure our workspace is neat, with no leftover data from earlier updates. Then, the Deploy step helps us easily and accurately update our app by following the set instructions. Think of Jenkinsfilev2 as a straightforward two-step checklist that Jenkins follows to help us keep our app updated without any mess or complications.
-[Success2][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev2.png]
+[Website2][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev2.png]
 
 
 
