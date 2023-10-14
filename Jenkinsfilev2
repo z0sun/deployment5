@@ -7,7 +7,6 @@ pipeline {
                 sh '''#!/bin/bash
                 scp var/lib/jenkins/workspace/pkill.sh ubuntu@34.207.172.136:/home/ubuntu
                 ssh ubuntu@34.207.172.136 'bash -s' < /home/ubuntu/pkill.sh
-                
                 '''
             }
         }
@@ -17,7 +16,6 @@ pipeline {
                 sh '''#!/bin/bash
                 scp var/lib/jenkins/workspace/setup2.sh ubuntu@34.207.172.136:/home/ubuntu
                 ssh ubuntu@34.207.172.136 'bash -s' < /home/ubuntu/setup2.sh
-                echo "command to run the setup2.sh"
                 '''
             }
         }
