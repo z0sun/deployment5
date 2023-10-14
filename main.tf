@@ -23,16 +23,6 @@ resource "aws_internet_gateway" "gw" {
   }
 }
 
-# # ############ ROUTE TABLE ###############
-# resource "aws_route_table" "route5" {
-#   vpc_id = aws_vpc.deploy5vpc.id
-
-#   route {
-#     cidr_block = "0.0.0.0/0"
-#     gateway_id = aws_internet_gateway.gw.id
-#   }
-# }
-
 resource "aws_default_route_table" "example" {
   default_route_table_id = aws_vpc.deploy5vpc.default_route_table_id
 
@@ -41,7 +31,6 @@ resource "aws_default_route_table" "example" {
     gateway_id = aws_internet_gateway.gw.id
   }
 }
-
 
 ############## SUBNETS #################
 resource "aws_subnet" "subnet1" {
