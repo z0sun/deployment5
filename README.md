@@ -65,6 +65,7 @@ data "template_file" "python_install" {
 [Build2][https://github.com/z0sun/deployment5/blob/main/Screen%20Shot%202023-10-14%20at%204.15.04%20AM.png]
 
 > Jenkinsfilev2 is our simplified guide for updating our app using Jenkins. It has two main steps: Clean and Deploy. First, the Clean step makes sure our workspace is neat, with no leftover data from earlier updates. Then, the Deploy step helps us easily and accurately update our app by following the set instructions. Think of Jenkinsfilev2 as a straightforward two-step checklist that Jenkins follows to help us keep our app updated without any mess or complications.
+
 [Website2][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev2.png]
 
 
