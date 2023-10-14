@@ -51,7 +51,7 @@ data "template_file" "python_install" {
 
 > Once you've set up your environment, deploying your application using Jenkins is a breeze with our predefined pipeline in Jenkinsfilev1. In a nutshell, Jenkinsfilev1 is like a recipe that tells Jenkins exactly how to deploy our application step-by-step. Jenkins will look at Jenkinsfilev1 and follow the steps outlined in it, which include logging into our second virtual computer instance, grabbing the necessary update script, and running it. This way, even complex updates to our application become as easy as pushing a button. Here’s a simplified walkthrough:
 
-Launch Jenkins: Open up Jenkins on your web browser - you'll typically find it at your-Jenkins-ip:8080.
+> Launch Jenkins: Open up Jenkins on your web browser - you'll typically find it at your-Jenkins-ip:8080.
 
 Start a New Pipeline: Navigate to "New Item", create a 'Pipeline', and give it a name, perhaps something like "AppUpdatePipeline".
 
