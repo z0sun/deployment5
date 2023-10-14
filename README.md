@@ -36,11 +36,15 @@ data "template_file" "python_install" {
 > [Jenkins Install][https://github.com/z0sun/deployment5/blob/main/scripts/jenkinsinstall]
 > [Python Install][https://github.com/z0sun/deployment5/blob/main/scripts/pythoninstall.sh]
 
+**** 
 
 ### SSH & Download Script 
 [Jenkinsfilev1][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev1]
+[Jenkinsfilev2][https://github.com/z0sun/deployment5/blob/main/Jenkinsfilev2]
 
-> 
+> Utilizing commands in Jenkinsfilev1 and Jenkinsfilev2 to SSH into a secondary instance and execute specific scripts underscores a strategic approach to manage and deploy applications in a distributed environment. This methodology enhances the CI/CD pipeline by enabling the Jenkins automation server to interact seamlessly with different instances, thereby optimizing resource utilization and enforcing a structured deployment workflow. By SSHing into the second instance, we ensure that workloads can be distributed and executed in a segregated manner, which not only isolates potential issues to a specific instance but also facilitates parallel operations, thereby speeding up the build and deployment process. Furthermore, by dynamically downloading and executing scripts per step in the Jenkinsfile, we introduce an element of flexibility and reusability to our pipeline, allowing for dynamic adjustments and instantiating configurations or applications tailored to the specifics of a given stage or environment, all while maintaining a clean and organized codebase in our version control.
+
+****
 
 
 
