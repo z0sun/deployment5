@@ -78,4 +78,5 @@ In this build, two public subnets are utilized. To add more security the instanc
 
 
 
-
+# Diagram
+[Diagram][https://github.com/z0sun/deployment5/blob/main/Deployment5.drawio.png]
