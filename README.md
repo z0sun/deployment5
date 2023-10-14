@@ -57,7 +57,7 @@ Start a New Pipeline: Navigate to "New Item", create a 'Pipeline', and give it a
 
 Link to GitHub: Under the Pipeline configuration, link Jenkins to the GitHub repository where Jenkinsfilev1 is stored. This is like telling Jenkins where your recipe is located.
 
-Run the Pipeline: Once configured, you simply 'Build' the pipeline and Jenkins will follow the steps in Jenkinsfilev1, ensuring your application is updated automatically and exactly as specified in the file.
+> Run the Pipeline: Once configured, you simply 'Build' the pipeline and Jenkins will follow the steps in Jenkinsfilev1, ensuring your application is updated automatically and exactly as specified in the file.
 
 #### Jenkinsfilev2
 [image][https://github.com/z0sun/deployment5/blob/main/Screen%20Shot%202023-10-14%20at%204.15.04%20AM.png]
